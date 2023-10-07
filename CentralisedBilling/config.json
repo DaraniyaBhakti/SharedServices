@@ -1,0 +1,65 @@
+{
+  "id": "CentralisedBilling",
+  "version": "0.0.2",
+  "status": "preAlpha",
+  "path": "./packages/blocks/CentralisedBilling",
+  "assembler-adapters": [],
+  "mobile": {
+    "merge-engine-navigation": {},
+    "assembler-exports": [
+      "CentralisedBilling"
+    ],
+    "assembler-dependencies": [],
+    "catalog-dependencies": [
+      "core",
+      "utilities"
+    ],
+    "assembler-devDependencies": [],
+    "merge-engine-screens": {
+      "CentralisedBilling": {
+        "file": "CentralisedBilling.tsx",
+        "extends": "CentralisedBillingController",
+        "ui-elements": [],
+        "imports": [
+          {
+            "value": "CentralisedBillingController",
+            "path": "./CentralisedBillingController"
+          },
+          {
+            "value": "{Props}",
+            "path": "./CentralisedBillingController"
+          }
+        ]
+      }
+    }
+  },
+  "web": {
+    "merge-engine-navigation": {},
+    "assembler-exports": [
+      "CentralisedBilling"
+    ],
+    "assembler-dependencies": [],
+    "catalog-dependencies": [
+      "core",
+      "utilities"
+    ],
+    "assembler-devDependencies": [],
+    "merge-engine-screens": {
+      "CentralisedBilling": {
+        "file": "CentralisedBilling.web.tsx",
+        "extends": "CentralisedBillingController",
+        "ui-elements": [],
+        "imports": [
+          {
+            "value": "CentralisedBillingController",
+            "path": "./CentralisedBillingController"
+          },
+          {
+            "value": "{Props}",
+            "path": "./CentralisedBillingController"
+          }
+        ]
+      }
+    }
+  }
+}

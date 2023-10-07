@@ -1,0 +1,65 @@
+{
+  "id": "ContentModeration",
+  "version": "0.0.2",
+  "status": "preAlpha",
+  "path": "./packages/blocks/ContentModeration",
+  "assembler-adapters": [],
+  "mobile": {
+    "merge-engine-navigation": {},
+    "assembler-exports": [
+      "ContentModeration"
+    ],
+    "assembler-dependencies": [],
+    "catalog-dependencies": [
+      "core",
+      "utilities"
+    ],
+    "assembler-devDependencies": [],
+    "merge-engine-screens": {
+      "ContentModeration": {
+        "file": "ContentModeration.tsx",
+        "extends": "ContentModerationController",
+        "ui-elements": [],
+        "imports": [
+          {
+            "value": "ContentModerationController",
+            "path": "./ContentModerationController"
+          },
+          {
+            "value": "{Props}",
+            "path": "./ContentModerationController"
+          }
+        ]
+      }
+    }
+  },
+  "web": {
+    "merge-engine-navigation": {},
+    "assembler-exports": [
+      "ContentModeration"
+    ],
+    "assembler-dependencies": [],
+    "catalog-dependencies": [
+      "core",
+      "utilities"
+    ],
+    "assembler-devDependencies": [],
+    "merge-engine-screens": {
+      "ContentModeration": {
+        "file": "ContentModeration.web.tsx",
+        "extends": "ContentModerationController",
+        "ui-elements": [],
+        "imports": [
+          {
+            "value": "ContentModerationController",
+            "path": "./ContentModerationController"
+          },
+          {
+            "value": "{Props}",
+            "path": "./ContentModerationController"
+          }
+        ]
+      }
+    }
+  }
+}

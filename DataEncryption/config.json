@@ -1,0 +1,65 @@
+{
+  "id": "DataEncryption",
+  "version": "0.0.2",
+  "status": "preAlpha",
+  "path": "./packages/blocks/DataEncryption",
+  "assembler-adapters": [],
+  "mobile": {
+    "merge-engine-navigation": {},
+    "assembler-exports": [
+      "DataEncryption"
+    ],
+    "assembler-dependencies": [],
+    "catalog-dependencies": [
+      "core",
+      "utilities"
+    ],
+    "assembler-devDependencies": [],
+    "merge-engine-screens": {
+      "DataEncryption": {
+        "file": "DataEncryption.tsx",
+        "extends": "DataEncryptionController",
+        "ui-elements": [],
+        "imports": [
+          {
+            "value": "DataEncryptionController",
+            "path": "./DataEncryptionController"
+          },
+          {
+            "value": "{Props}",
+            "path": "./DataEncryptionController"
+          }
+        ]
+      }
+    }
+  },
+  "web": {
+    "merge-engine-navigation": {},
+    "assembler-exports": [
+      "DataEncryption"
+    ],
+    "assembler-dependencies": [],
+    "catalog-dependencies": [
+      "core",
+      "utilities"
+    ],
+    "assembler-devDependencies": [],
+    "merge-engine-screens": {
+      "DataEncryption": {
+        "file": "DataEncryption.web.tsx",
+        "extends": "DataEncryptionController",
+        "ui-elements": [],
+        "imports": [
+          {
+            "value": "DataEncryptionController",
+            "path": "./DataEncryptionController"
+          },
+          {
+            "value": "{Props}",
+            "path": "./DataEncryptionController"
+          }
+        ]
+      }
+    }
+  }
+}

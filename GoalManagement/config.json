@@ -1,0 +1,65 @@
+{
+  "id": "GoalManagement",
+  "version": "0.0.2",
+  "status": "preAlpha",
+  "path": "./packages/blocks/GoalManagement",
+  "assembler-adapters": [],
+  "mobile": {
+    "merge-engine-navigation": {},
+    "assembler-exports": [
+      "GoalManagement"
+    ],
+    "assembler-dependencies": [],
+    "catalog-dependencies": [
+      "core",
+      "utilities"
+    ],
+    "assembler-devDependencies": [],
+    "merge-engine-screens": {
+      "GoalManagement": {
+        "file": "GoalManagement.tsx",
+        "extends": "GoalManagementController",
+        "ui-elements": [],
+        "imports": [
+          {
+            "value": "GoalManagementController",
+            "path": "./GoalManagementController"
+          },
+          {
+            "value": "{Props}",
+            "path": "./GoalManagementController"
+          }
+        ]
+      }
+    }
+  },
+  "web": {
+    "merge-engine-navigation": {},
+    "assembler-exports": [
+      "GoalManagement"
+    ],
+    "assembler-dependencies": [],
+    "catalog-dependencies": [
+      "core",
+      "utilities"
+    ],
+    "assembler-devDependencies": [],
+    "merge-engine-screens": {
+      "GoalManagement": {
+        "file": "GoalManagement.web.tsx",
+        "extends": "GoalManagementController",
+        "ui-elements": [],
+        "imports": [
+          {
+            "value": "GoalManagementController",
+            "path": "./GoalManagementController"
+          },
+          {
+            "value": "{Props}",
+            "path": "./GoalManagementController"
+          }
+        ]
+      }
+    }
+  }
+}

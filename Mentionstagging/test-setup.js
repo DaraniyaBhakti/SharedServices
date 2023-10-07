@@ -1,0 +1,71 @@
+// test-setup.js
+import { configure } from "enzyme";
+import Adapter from "enzyme-adapter-react-16";
+configure({ adapter: new Adapter() });
+
+jest.mock("react-native/Libraries/Utilities/Platform", () => ({
+  OS: "macos",
+  select: () => null,
+}));
+
+jest.mock("../../framework/src/Utilities", () => ({
+  setStorageData: jest
+    .fn()
+    .mockImplementationOnce((key) => {
+      if (key === "login_token") {
+        return JSON.stringify(
+          "eyJhbGciOiJIUzUxMiJ9.eyJpZCI6OCwiZXhwIjoxNjc1NTExMjAwLCJ0b2tlbl90eXBlIjoibG9naW4ifQ.l1reF4AVlAkI0_7zhC89IsV3c8zw7_I4gz3M5lBbGE8FCbTQCNdOQIVq5yI2wCQqEsNCFyVu7udgXvXh7joDyQ",
+        );
+      }
+      if (key === "postData") {
+        return JSON.stringify([
+          {
+            id: 22,
+            name: "User 1",
+            body: "Post Text",
+            location: "Post Location",
+          },
+        ]);
+      }
+      if (key === "commentData") {
+        return JSON.stringify({
+          id: 4,
+          name: "User - 44",
+          accountID: 44,
+          postID: 10,
+          commentText: "Comment text",
+          isDestroyed: false,
+          isNewOption: false,
+        });
+      }
+      if (key === "account_Id") {
+        return JSON.stringify(24);
+      }
+      return "token";
+    })
+    .mockImplementation(() => null),
+  getStorageData: jest
+    .fn()
+    .mockImplementationOnce((key) => {
+      if (key === "login_token") {
+        return JSON.parse(
+          "eyJhbGciOiJIUzUxMiJ9.eyJpZCI6OCwiZXhwIjoxNjc1NTExMjAwLCJ0b2tlbl90eXBlIjoibG9naW4ifQ.l1reF4AVlAkI0_7zhC89IsV3c8zw7_I4gz3M5lBbGE8FCbTQCNdOQIVq5yI2wCQqEsNCFyVu7udgXvXh7joDyQ",
+        );
+      }
+      if (key === "postData") {
+        return JSON.parse([
+          {
+            id: 22,
+            name: "User 1",
+            body: "Post Text",
+            location: "Post Location",
+          },
+        ]);
+      }
+      if (key === "account_Id") {
+        return JSON.parse(24);
+      }
+      return "token";
+    })
+    .mockImplementation(() => null),
+}));

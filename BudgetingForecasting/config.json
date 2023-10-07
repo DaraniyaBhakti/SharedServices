@@ -1,0 +1,65 @@
+{
+  "id": "BudgetingForecasting",
+  "version": "0.0.2",
+  "status": "preAlpha",
+  "path": "./packages/blocks/BudgetingForecasting",
+  "assembler-adapters": [],
+  "mobile": {
+    "merge-engine-navigation": {},
+    "assembler-exports": [
+      "BudgetingForecasting"
+    ],
+    "assembler-dependencies": [],
+    "catalog-dependencies": [
+      "core",
+      "utilities"
+    ],
+    "assembler-devDependencies": [],
+    "merge-engine-screens": {
+      "BudgetingForecasting": {
+        "file": "BudgetingForecasting.tsx",
+        "extends": "BudgetingForecastingController",
+        "ui-elements": [],
+        "imports": [
+          {
+            "value": "BudgetingForecastingController",
+            "path": "./BudgetingForecastingController"
+          },
+          {
+            "value": "{Props}",
+            "path": "./BudgetingForecastingController"
+          }
+        ]
+      }
+    }
+  },
+  "web": {
+    "merge-engine-navigation": {},
+    "assembler-exports": [
+      "BudgetingForecasting"
+    ],
+    "assembler-dependencies": [],
+    "catalog-dependencies": [
+      "core",
+      "utilities"
+    ],
+    "assembler-devDependencies": [],
+    "merge-engine-screens": {
+      "BudgetingForecasting": {
+        "file": "BudgetingForecasting.web.tsx",
+        "extends": "BudgetingForecastingController",
+        "ui-elements": [],
+        "imports": [
+          {
+            "value": "BudgetingForecastingController",
+            "path": "./BudgetingForecastingController"
+          },
+          {
+            "value": "{Props}",
+            "path": "./BudgetingForecastingController"
+          }
+        ]
+      }
+    }
+  }
+}

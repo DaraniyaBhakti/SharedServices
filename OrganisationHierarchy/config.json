@@ -1,0 +1,65 @@
+{
+  "id": "OrganisationHierarchy",
+  "version": "0.0.2",
+  "status": "preAlpha",
+  "path": "./packages/blocks/OrganisationHierarchy",
+  "assembler-adapters": [],
+  "mobile": {
+    "merge-engine-navigation": {},
+    "assembler-exports": [
+      "OrganisationHierarchy"
+    ],
+    "assembler-dependencies": [],
+    "catalog-dependencies": [
+      "core",
+      "utilities"
+    ],
+    "assembler-devDependencies": [],
+    "merge-engine-screens": {
+      "OrganisationHierarchy": {
+        "file": "OrganisationHierarchy.tsx",
+        "extends": "OrganisationHierarchyController",
+        "ui-elements": [],
+        "imports": [
+          {
+            "value": "OrganisationHierarchyController",
+            "path": "./OrganisationHierarchyController"
+          },
+          {
+            "value": "{Props}",
+            "path": "./OrganisationHierarchyController"
+          }
+        ]
+      }
+    }
+  },
+  "web": {
+    "merge-engine-navigation": {},
+    "assembler-exports": [
+      "OrganisationHierarchy"
+    ],
+    "assembler-dependencies": [],
+    "catalog-dependencies": [
+      "core",
+      "utilities"
+    ],
+    "assembler-devDependencies": [],
+    "merge-engine-screens": {
+      "OrganisationHierarchy": {
+        "file": "OrganisationHierarchy.web.tsx",
+        "extends": "OrganisationHierarchyController",
+        "ui-elements": [],
+        "imports": [
+          {
+            "value": "OrganisationHierarchyController",
+            "path": "./OrganisationHierarchyController"
+          },
+          {
+            "value": "{Props}",
+            "path": "./OrganisationHierarchyController"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+export const imgPasswordVisible = require("../assets/ic_password_visible.png");
+export const imgPasswordInVisible = require("../assets/ic_password_invisible.png");
+export const imgUserTag = require("../assets/user-avatar.png");
+export const imgComment = require("../assets/comment.png");
+export const imgEdit = require("../assets/editing.png");
+export const imgEditComment = require("../assets/pencil.png");
+export const imgDeleteComment = require("../assets/close.png");
+export const imgAddPost = require("../assets/addition.png");
+export const imgMentions = require("../assets/heart.png");
+export const imgMap = require("../assets/map.png");
+export const imgFilter = require("../assets/filter.png");

@@ -1,0 +1,65 @@
+{
+  "id": "TimesheetManagement",
+  "version": "0.0.2",
+  "status": "preAlpha",
+  "path": "./packages/blocks/TimesheetManagement",
+  "assembler-adapters": [],
+  "mobile": {
+    "merge-engine-navigation": {},
+    "assembler-exports": [
+      "TimesheetManagement"
+    ],
+    "assembler-dependencies": [],
+    "catalog-dependencies": [
+      "core",
+      "utilities"
+    ],
+    "assembler-devDependencies": [],
+    "merge-engine-screens": {
+      "TimesheetManagement": {
+        "file": "TimesheetManagement.tsx",
+        "extends": "TimesheetManagementController",
+        "ui-elements": [],
+        "imports": [
+          {
+            "value": "TimesheetManagementController",
+            "path": "./TimesheetManagementController"
+          },
+          {
+            "value": "{Props}",
+            "path": "./TimesheetManagementController"
+          }
+        ]
+      }
+    }
+  },
+  "web": {
+    "merge-engine-navigation": {},
+    "assembler-exports": [
+      "TimesheetManagement"
+    ],
+    "assembler-dependencies": [],
+    "catalog-dependencies": [
+      "core",
+      "utilities"
+    ],
+    "assembler-devDependencies": [],
+    "merge-engine-screens": {
+      "TimesheetManagement": {
+        "file": "TimesheetManagement.web.tsx",
+        "extends": "TimesheetManagementController",
+        "ui-elements": [],
+        "imports": [
+          {
+            "value": "TimesheetManagementController",
+            "path": "./TimesheetManagementController"
+          },
+          {
+            "value": "{Props}",
+            "path": "./TimesheetManagementController"
+          }
+        ]
+      }
+    }
+  }
+}

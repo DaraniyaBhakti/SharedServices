@@ -1,0 +1,65 @@
+{
+  "id": "PayrollIntegration2",
+  "version": "0.0.2",
+  "status": "preAlpha",
+  "path": "./packages/blocks/PayrollIntegration2",
+  "assembler-adapters": [],
+  "mobile": {
+    "merge-engine-navigation": {},
+    "assembler-exports": [
+      "PayrollIntegration2"
+    ],
+    "assembler-dependencies": [],
+    "catalog-dependencies": [
+      "core",
+      "utilities"
+    ],
+    "assembler-devDependencies": [],
+    "merge-engine-screens": {
+      "PayrollIntegration2": {
+        "file": "PayrollIntegration2.tsx",
+        "extends": "PayrollIntegration2Controller",
+        "ui-elements": [],
+        "imports": [
+          {
+            "value": "PayrollIntegration2Controller",
+            "path": "./PayrollIntegration2Controller"
+          },
+          {
+            "value": "{Props}",
+            "path": "./PayrollIntegration2Controller"
+          }
+        ]
+      }
+    }
+  },
+  "web": {
+    "merge-engine-navigation": {},
+    "assembler-exports": [
+      "PayrollIntegration2"
+    ],
+    "assembler-dependencies": [],
+    "catalog-dependencies": [
+      "core",
+      "utilities"
+    ],
+    "assembler-devDependencies": [],
+    "merge-engine-screens": {
+      "PayrollIntegration2": {
+        "file": "PayrollIntegration2.web.tsx",
+        "extends": "PayrollIntegration2Controller",
+        "ui-elements": [],
+        "imports": [
+          {
+            "value": "PayrollIntegration2Controller",
+            "path": "./PayrollIntegration2Controller"
+          },
+          {
+            "value": "{Props}",
+            "path": "./PayrollIntegration2Controller"
+          }
+        ]
+      }
+    }
+  }
+}
